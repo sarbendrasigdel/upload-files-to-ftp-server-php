@@ -57,3 +57,7 @@ body{
     border-radius: 6px;
     cursor: pointer;
 }
+
+.drag-area .highlight {
+    border-color: #009688;
+  }

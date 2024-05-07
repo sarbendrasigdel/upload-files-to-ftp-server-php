@@ -9,16 +9,20 @@
 
 </head>
 <body>
-    <div class="drag-area">
+    <div class="drag-area" id="drag-area">
         <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
         <header>Drag & drop to Upload file</header>
         <span>Or</span>
-        <form action="uploader.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="file[]"  multiple>
-            <button type="submit">upload</button>
-            
-    </form>
-    </div>
+        <input type="file" name="file[]" id="fileInput"  multiple hidden>
+        <button id="browseFiles" >browse</button>
 
+        <div id="upload-success">
+
+        </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
 </body>
 </html>
